@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda aula de Java Script - Dom</title>
+</head>
+<body>
+    <h1 style="color: red; text-align:center;">Produto com desconto</h1>
+    <div style="background-color: darkgrey;" >
+    <form style=text-align:center  action="">
+        <label for="">Digite o valor do produto</label>
+        <input type="text">
+        <input type="button" value="Calcular">
+        <p>
+        </p>
+    </form>
+</div>
+    <script>
+        /*
+        Neste script iremos calcular um valor de desconto de 10% sobre o preço do produto.
+        O usuario digita o valor do produto e, em javascript obtemos o valordigitado no campo(input)
+         e multiplicamos o valor por 0.9(90%) e assim temos o valor final com desconto 10%
+        */
+       /*
+       criamos tres variaveis para relacionar os elemmentos do formulario e assim realizar os calculos com mais facilidade.
+       O comando document, faz referencia ao meu documento html.
+       O comando getElementByTagName-> diz que estamos pegando um elementos html por seu nome de Tag.
+       Neste exemplo foi necessario dizer qual a posição da tag que se deseja trabalhar
+       */
+        
+       var valorproduto = document.getElementsByTagName ("input")[0]
+       var calcular = document.getElementsByTagName("input")[1]
+       var resultado = document.getElementsByTagName("p")[0]
+
+        /*
+        calcular é a referencia ao botão calcular que estar no formulario.
+        quando o usuario clicar (onclick)no botão sera disparado uma execução f(function) que realiza o calculo do valor do
+         produto *0.9 ou seja descontar 10% do valor do produto, o resultado é uma referencia ao p(paragrafo) que esta
+          no formulario e dentro dele (innerHTML) vamos colocar o resultado do calculo
+        */
+        calcular.onclick = function(){
+            resultado.innerHTML = valorproduto.value * 0.9
+        }
+
+    </script>
+
+</body>
+</html>

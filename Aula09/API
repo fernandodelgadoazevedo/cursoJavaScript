@@ -1,0 +1,17 @@
+Chave da API
+84a1287f4d54f6377abc7426dc06176f
+
+Token de Leitura da API
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NGExMjg3ZjRkNTRmNjM3N2FiYzc0MjZkYzA2MTc2ZiIsInN1YiI6IjY1MjY4OTc3NjI5YjJjMDBjNTljZmYxNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qOPdN4JbjQt-wgtKMCuXk7idqnpuOMO4FtaugfEY_no
+
+
+
+https://api.themoviedb.org/3/movie/550?api_key=84a1287f4d54f6377abc7426dc06176f
+
+
+
+https://mongoosejs.com/
+
+
+
+https://api.themoviedb.org/3/movie/popular

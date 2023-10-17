@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botão Radio que altera a cor da Body</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="radio" name="fundo" id="vermelho" value="vermelho" />
+      Vermelho
+      <input type="radio" name="fundo" id="verde" value="verde" /> Verde
+      <input type="radio" name="fundo" id="azul" value="azul" /> Azul
+    </form>
+
+    <script>
+      var rdVermelho = document.getElementById("vermelho");
+      var rdVerde = document.getElementById("verde");
+      var rdAzul = document.getElementById("azul");
+
+      rdVermelho.onclick = function () {
+        document.body.style.backgroundColor = "#d00";
+      };
+
+      rdVerde.onclick = function () {
+        document.body.style.backgroundColor = "#1f7";
+      };
+
+      rdAzul.onclick = function () {
+        document.body.style.backgroundColor = "#01f";
+      };
+    </script>
+  </body>
+</html>
